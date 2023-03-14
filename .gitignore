@@ -51,3 +51,7 @@ Thumbs.db
 *.mov
 *.wmv
 
+# ignore the files from west/zephyr
+.west/
+modules/
+zephyr/

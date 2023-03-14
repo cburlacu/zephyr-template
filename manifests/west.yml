@@ -1,0 +1,20 @@
+#
+# Copyright (c) 2022 Circuit Dojo LLC
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+# my-repo/west.yml:
+manifest:
+  remotes:
+    - name: zephyr
+      url-base: https://github.com/zephyrproject-rtos
+
+  projects:
+    - name: zephyr
+      remote: zephyr
+      repo-path: zephyr
+      revision: zephyr-v3.3.0
+      import:
+        name-allowlist:
+          - cmsis
+          - hal_rpi_pico
